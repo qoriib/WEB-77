@@ -124,7 +124,7 @@ if (newsletterForm) {
 const joinForm = document.getElementById("join-form");
 const popup = document.getElementById("form-popup");
 const popupMessage = document.getElementById("form-popup-message");
-const popupCloseBtn = popup?.querySelector(".form-popup__close");
+const popupCloseBtn = popup?.querySelector(".form-popup-close");
 const popupCtaBtn = document.getElementById("form-popup-cta");
 
 const joinElements = joinForm
@@ -226,7 +226,7 @@ if (popupCtaBtn) {
 }
 
 if (popup) {
-  const backdrop = popup.querySelector(".form-popup__backdrop");
+  const backdrop = popup.querySelector(".form-popup-backdrop");
   backdrop?.addEventListener("click", hidePopup);
 }
 

@@ -150,16 +150,16 @@
       </section>
 
       <div class="form-popup" id="form-popup" aria-hidden="true">
-        <div class="form-popup__backdrop"></div>
-        <div class="form-popup__content" role="dialog" aria-labelledby="form-popup-title">
-          <button type="button" class="form-popup__close" aria-label="Close welcome message">
+        <div class="form-popup-backdrop"></div>
+        <div class="form-popup-content" role="dialog" aria-labelledby="form-popup-title">
+          <button type="button" class="form-popup-close" aria-label="Close welcome message">
             <i class="fa-solid fa-times"></i>
           </button>
           <h3 id="form-popup-title">Welcome to the Glow Squad! ✨</h3>
           <p id="form-popup-message">
             Thank you for joining. Keep an eye on your inbox for the sweetest updates and invites.
           </p>
-          <button type="button" class="form-popup__cta" id="form-popup-cta">Got it!</button>
+          <button type="button" class="form-popup-cta" id="form-popup-cta">Got it!</button>
         </div>
       </div>
 
@@ -213,15 +213,14 @@
                   <span>Vegan-friendly, cruelty-free, and mindful of sensitive skin.</span>
                 </div>
               </div>
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="fa-solid fa-gift"></i>
-                </div>
-                <div class="stat-copy">
-                  <strong>Community Rewards</strong>
-                  <span>Workshops, glow-up classes, and surprise drops every season.</span>
-                </div>
-              </div>
+            </div>
+            <div class="available-at">
+              <span class="available-at-label">Available at:</span>
+              <ul class="available-at-list">
+                <li><i class="fa-solid fa-store"></i> Official Emina Stores</li>
+                <li><i class="fa-solid fa-bag-shopping"></i> Paragon Mall Counters</li>
+                <li><i class="fa-solid fa-laptop"></i> eCommerce (Shopee, Tokopedia)</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -241,7 +240,7 @@
           playful colors, and pocket-friendly prices ready to brighten your routine.
         </p>
         <div class="product-row">
-          <div class="product-track" tabindex="0">
+          <div class="product-track" tabindex="0" aria-live="polite">
             <article class="product-card">
               <div class="product-image">
                 <img

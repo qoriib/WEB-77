@@ -58,11 +58,11 @@
         <div class="header-row header-nav">
           <nav>
             <ul class="nav-primary">
-              <li><a href="#about">About us</a></li>
-              <li><a href="#home" class="active-link">Emina</a></li>
-              <li><a href="#">InstaPerfect</a></li>
-              <li><a href="#">Wardah</a></li>
-              <li><a href="#join">Customer</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#offers">Offers</a></li>
+              <li><a href="#join">Join</a></li>
             </ul>
           </nav>
         </div>
@@ -148,6 +148,20 @@
         </div>
       </section>
 
+      <div class="form-popup" id="form-popup" aria-hidden="true">
+        <div class="form-popup__backdrop"></div>
+        <div class="form-popup__content" role="dialog" aria-labelledby="form-popup-title">
+          <button type="button" class="form-popup__close" aria-label="Close welcome message">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h3 id="form-popup-title">Welcome to the Glow Squad! ✨</h3>
+          <p id="form-popup-message">
+            Thank you for joining. Keep an eye on your inbox for the sweetest updates and invites.
+          </p>
+          <button type="button" class="form-popup__cta" id="form-popup-cta">Got it!</button>
+        </div>
+      </div>
+
       <!-- ABOUT SECTION -->
       <section id="about">
         <h2 class="section-heading">About Emina Cosmetics 🌸</h2>
@@ -225,7 +239,6 @@
           Swipe through our favorite picks—each product is a joyful blend of skin-loving formulas,
           playful colors, and pocket-friendly prices ready to brighten your routine.
         </p>
-
         <div class="product-row">
           <div class="product-track" tabindex="0">
             <article class="product-card">
@@ -385,85 +398,6 @@
             </button>
           </div>
         </div>
-
-        <div class="product-data-grid">
-          <div class="products-lists">
-            <div class="info-card table-card">
-              <h3>Product Snapshot</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Category</th>
-                    <th>Key Benefit</th>
-                    <th>Price (IDR)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Sun Battle SPF 50 Hydraburst</td>
-                    <td>Sun Care</td>
-                    <td>Hydraburst barrier keeps skin hydrated</td>
-                    <td>45.000</td>
-                  </tr>
-                  <tr>
-                    <td>Sun Battle SPF 50 Cica Fighter</td>
-                    <td>Sun Care</td>
-                    <td>Cica + allantoin calm breakouts</td>
-                    <td>45.000</td>
-                  </tr>
-                  <tr>
-                    <td>Airy Surprise Tint 01 Y2K</td>
-                    <td>Liptint</td>
-                    <td>Air-light stain for lips & cheeks</td>
-                    <td>69.500</td>
-                  </tr>
-                  <tr>
-                    <td>Glossy Stain 01 Autumn Bell</td>
-                    <td>Lip Gloss</td>
-                    <td>Dual stain-gloss with glass shine</td>
-                    <td>56.000</td>
-                  </tr>
-                  <tr>
-                    <td>GloRad+ Eye Wake Up Roller</td>
-                    <td>Serum</td>
-                    <td>Cooling roller reduces puffiness</td>
-                    <td>81.000</td>
-                  </tr>
-                  <tr>
-                    <td>GloRad+ Amino ProCleanser</td>
-                    <td>Face Wash</td>
-                    <td>Amino foam lifts dirt gently</td>
-                    <td>60.000</td>
-                  </tr>
-                  <tr>
-                    <td>GloRad+ Water-Sphere Serum</td>
-                    <td>Serum</td>
-                    <td>Niacinamide + vitamin C brighten fast</td>
-                    <td>94.000</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="list-card">
-              <h3>Top 3 Routines to Try 💡</h3>
-              <ol>
-                <li><strong>Cleanse</strong> with GloRad+ Amino ProCleanser.</li>
-                <li><strong>Treat</strong> using GloRad+ Water-Sphere Serum.</li>
-                <li><strong>Protect</strong> with Sun Battle Hydraburst SPF 50.</li>
-              </ol>
-            </div>
-            <div class="list-card">
-              <h3>Why Beauties Choose Emina 🌷</h3>
-              <ul>
-                <li>Dermatologically tested formulas that suit young skin.</li>
-                <li>Cica, amino, and peptide blends calm and strengthen barriers.</li>
-                <li>Accessible pricing keeps daily routines budget-friendly.</li>
-                <li>Muzik Tiger collabs make every shelfie super cute.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section id="offers" class="section-base">
@@ -518,9 +452,9 @@
         </div>
       </section>
 
-      <!-- 🌸 ROUTINE SECTION -->
+      <!-- ROUTINE SECTION -->
       <section id="routine">
-        <h2 class="section-heading">Daily Glow Routine 🌞</h2>
+        <h2 class="section-heading">Daily Glow Routine</h2>
         <p class="section-subtitle">
           Keep things sweet and simple with this step-by-step daily skincare
           routine. Pair it with your favorite playlists and glow all day.
@@ -537,7 +471,7 @@
             </ol>
           </div>
           <div class="highlight-card">
-            <h3>Tips from Our Squad 💕</h3>
+            <h3>Tips from Our Squad</h3>
             <ul>
               <li>Pair sunscreen with a cute bucket hat for extra style.</li>
               <li>Keep lip balm handy to refresh before video calls.</li>
@@ -548,7 +482,7 @@
         </div>
       </section>
 
-      <!-- 🌸 JOIN SECTION -->
+      <!--  JOIN SECTION -->
       <section id="join">
         <h2 class="section-heading">Join Our Sweet Squad 💕</h2>
         <p class="section-subtitle">
@@ -556,8 +490,8 @@
           launches, beauty classes, and surprise gifts!
         </p>
         <div class="form-card">
-          <form id="join-form">
-            <div>
+          <form id="join-form" novalidate>
+            <div class="field">
               <label for="name">Full Name</label>
               <input
                 type="text"
@@ -566,8 +500,9 @@
                 placeholder="Aurora F."
                 required
               />
+              <small class="error-message" id="name-error"></small>
             </div>
-            <div>
+            <div class="field">
               <label for="email">Email Address</label>
               <input
                 type="email"
@@ -576,8 +511,9 @@
                 placeholder="beauty@emina.co.id"
                 required
               />
+              <small class="error-message" id="email-error"></small>
             </div>
-            <div>
+            <div class="field">
               <label for="password">Create Password</label>
               <input
                 type="password"
@@ -586,8 +522,9 @@
                 minlength="6"
                 required
               />
+              <small class="error-message" id="password-error"></small>
             </div>
-            <div>
+            <div class="field">
               <label for="story">Tell us about your skin story</label>
               <textarea
                 id="story"
@@ -595,8 +532,9 @@
                 placeholder="Combination skin & loves gentle glow..."
                 required
               ></textarea>
+              <small class="error-message" id="story-error"></small>
             </div>
-            <div>
+            <div class="field">
               <span class="label">Skin Type</span>
               <div class="choices">
                 <label>
@@ -616,8 +554,9 @@
                   Combination
                 </label>
               </div>
+              <small class="error-message" id="skin-error"></small>
             </div>
-            <div>
+            <div class="field">
               <label for="favorite">Favorite Emina Product</label>
               <select id="favorite" name="favorite" required>
                 <option value="">Choose one ✨</option>
@@ -626,16 +565,20 @@
                 <option value="creamy-tint">Creamy Tint</option>
                 <option value="skin-buddy">Skin Buddy Cleanser</option>
               </select>
+              <small class="error-message" id="favorite-error"></small>
             </div>
-            <div class="choices">
-              <label>
-                <input type="checkbox" name="agree" required />
-                I agree to receive beauty updates and tips.
-              </label>
-              <label>
-                <input type="checkbox" name="community" />
-                Add me to community events invites.
-              </label>
+            <div class="field">
+              <div class="choices">
+                <label>
+                  <input type="checkbox" name="agree" id="agree" required />
+                  I agree to receive beauty updates and tips.
+                </label>
+                <label>
+                  <input type="checkbox" name="community" id="community" />
+                  Add me to community events invites.
+                </label>
+              </div>
+              <small class="error-message" id="agree-error"></small>
             </div>
             <button type="submit" class="submit-btn">Join the Club 🌸</button>
           </form>
@@ -644,19 +587,38 @@
     </main>
     <footer>
       <div class="footer-shell">
+        <div class="footer-top">
+          <a href="#home" class="footer-brand">
+            <span class="footer-brand__icon"><i class="fa-solid fa-heart"></i></span>
+            <span class="footer-brand__text">
+              Paragon Corp
+              <span class="footer-brand__tagline">Born to Be Loved</span>
+            </span>
+          </a>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#offers">Offers</a></li>
+              <li><a href="#join">Join</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+          </div>
+        </div>
+
         <div class="footer-newsletter">
           <div>
-            <h3>Join the Glow Newsletter 💌</h3>
+            <h3>Glow Newsletter 💌</h3>
             <p>
               Fresh launches, routine tips, and member-only promos delivered once a week.
               Stay in the loop and glow with the Emina squad.
             </p>
-            <div class="footer-social">
-              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
-            </div>
           </div>
           <form class="footer-form" id="newsletter-form">
             <label for="newsletter-email" class="sr-only">Email address</label>
@@ -678,27 +640,17 @@
 
         <div class="footer-links">
           <div>
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Emina</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#routine">Routine</a></li>
-              <li><a href="#join">Join Us</a></li>
-            </ul>
-          </div>
-          <div>
             <h4>Help & Support</h4>
             <ul>
               <li><a href="#join">FAQs & Community</a></li>
-              <li><a href="#products">How to Shop</a></li>
               <li><a href="#routine">Skin Tips</a></li>
+              <li><a href="#offers">Latest Offers</a></li>
               <li><a href="#">Store Locator</a></li>
               <li><a href="#">Paragon Care</a></li>
             </ul>
           </div>
           <div>
-            <h4>Stay Connected</h4>
+            <h4>Contact</h4>
             <ul>
               <li><a href="mailto:glow@emina.co.id">glow@emina.co.id</a></li>
               <li><a href="tel:+622112345678">+62 21 123 456 78</a></li>

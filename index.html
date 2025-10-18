@@ -17,14 +17,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <style>
-:root {
-  --pink-soft: #ffcce0;
-  --pink-bold: #ff66a3;
-  --pink-light: #fff4f9;
-  --lavender: #eff0ff;
-  --text-dark: #413044;
-  --text-muted: #7a6a7e;
-}
+      :root {
+        --pink-soft: #ffcce0;
+        --pink-bold: #ff66a3;
+        --pink-light: #fff4f9;
+        --lavender: #eff0ff;
+        --text-dark: #413044;
+        --text-muted: #7a6a7e;
+      }
 
       .sr-only {
         position: absolute;
@@ -59,9 +59,9 @@
           <nav>
             <ul class="nav-primary">
               <li><a href="#about">About us</a></li>
-              <li><a href="#home">Emina</a></li>
-              <li><a href="#products">InstaPerfect</a></li>
-              <li><a href="#routine">Wardah</a></li>
+              <li><a href="#home" class="active-link">Emina</a></li>
+              <li><a href="#">InstaPerfect</a></li>
+              <li><a href="#">Wardah</a></li>
               <li><a href="#join">Customer</a></li>
             </ul>
           </nav>
@@ -69,7 +69,7 @@
       </div>
     </header>
     <main>
-      <!-- 🌸 HOME SECTION -->
+      <!-- HOME SECTION -->
       <section id="home" class="hero">
         <div class="hero-shell">
           <div class="slideshow">
@@ -77,7 +77,7 @@
               <div class="slide-copy">
                 <span class="slide-badge">Our Slogan</span>
                 <h2 class="hero-title" style="color: #ff66a3;">Born to Be Loved</h2>
-                <p>
+                <p class="hero-description">
                   A reminder that every girl deserves a gentle routine, a burst of color,
                   and beauty that loves you back. Emina creates playful formulas that keep
                   confidence soft, bright, and effortless.
@@ -90,7 +90,7 @@
               </div>
               <div class="slide-visual">
                 <img
-                  src="./imgs/slide-1.jpg"
+                  src="./imgs/slide-1.jpeg"
                   alt="Soft pink makeup products arranged on a pastel background"
                 />
               </div>
@@ -99,7 +99,7 @@
               <div class="slide-copy">
                 <span class="slide-badge">Why Girls Love Emina?</span>
                 <h2 class="hero-title">Playful Beauty, Real Results</h2>
-                <p>
+                <p class="hero-description">
                   From campus mornings to weekend hangouts, Emina delivers formulas that
                   feel good, look good, and keep your skin smiling back.
                 </p>
@@ -111,7 +111,7 @@
               </div>
               <div class="slide-visual">
                 <img
-                  src="https://images.unsplash.com/photo-1589987607627-616cac5c5b63?auto=format&fit=crop&w=600&q=80"
+                  src="./imgs/slide-2.jpeg"
                   alt="Colorful skincare bottles on a minimalist shelf"
                 />
               </div>
@@ -120,10 +120,6 @@
               <div class="slide-copy">
                 <span class="slide-badge">Simple Skincare Routine</span>
                 <h2 class="hero-title">Glow Steps You Can Follow</h2>
-                <p>
-                  Keep your skincare sweet and simple with a routine that loves your skin
-                  back morning and night.
-                </p>
                 <ol class="slide-steps">
                   <li>Clean your face</li>
                   <li>Apply toner</li>
@@ -135,7 +131,7 @@
               </div>
               <div class="slide-visual">
                 <img
-                  src="https://images.unsplash.com/photo-1600181953294-85c8e10c5bd8?auto=format&fit=crop&w=600&q=80"
+                  src="./imgs/slide-3.jpeg"
                   alt="Skincare essentials neatly stacked in pink tones"
                 />
               </div>
@@ -152,7 +148,7 @@
         </div>
       </section>
 
-      <!-- 🌸 ABOUT SECTION -->
+      <!-- ABOUT SECTION -->
       <section id="about">
         <h2 class="section-heading">About Emina Cosmetics 🌸</h2>
         <p class="section-subtitle">
@@ -181,67 +177,31 @@
                 <span><i class="fa-solid fa-people-group"></i>1M+ glow squad members</span>
               </div>
             </div>
-            <div class="info-card table-card">
-              <h3>Dream Team Members</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Role</th>
-                    <th>Favorite Product</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lila Arsy</td>
-                    <td>Brand Storyteller</td>
-                    <td>Creamy Tint</td>
-                  </tr>
-                  <tr>
-                    <td>Raven Yunita</td>
-                    <td>Product Innovator</td>
-                    <td>Bright Stuff Serum</td>
-                  </tr>
-                  <tr>
-                    <td>Nara Wicak</td>
-                    <td>Community Fairy</td>
-                    <td>Skin Buddy Cleanser</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
           <div class="about-column">
-            <div class="highlight-card">
-              <h3>Brand Vibes & Values 💫</h3>
-              <ol>
-                <li><strong>Launch friendly formulas</strong> for beginner beauties.</li>
-                <li><strong>Collaborate with artists</strong> who celebrate self-love.</li>
-                <li><strong>Educate the community</strong> through playful experiences.</li>
-              </ol>
-              <ul>
-                <li>💕 Kindness-first in every product.</li>
-                <li>🌸 Celebrate diversity and individuality.</li>
-                <li>🧴 Keep routines simple yet effective.</li>
-              </ul>
-            </div>
             <div class="info-card brand-stats">
               <div class="stat-item">
-                <i class="fa-solid fa-lightbulb"></i>
+                <div class="stat-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
                 <div class="stat-copy">
                   <strong>Innovation Labs</strong>
                   <span>Derm-tested, student-approved textures for daily wear.</span>
                 </div>
               </div>
               <div class="stat-item">
-                <i class="fa-solid fa-leaf"></i>
+                <div class="stat-icon">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
                 <div class="stat-copy">
                   <strong>Conscious Formulas</strong>
                   <span>Vegan-friendly, cruelty-free, and mindful of sensitive skin.</span>
                 </div>
               </div>
               <div class="stat-item">
-                <i class="fa-solid fa-gift"></i>
+                <div class="stat-icon">
+                  <i class="fa-solid fa-gift"></i>
+                </div>
                 <div class="stat-copy">
                   <strong>Community Rewards</strong>
                   <span>Workshops, glow-up classes, and surprise drops every season.</span>
@@ -252,24 +212,21 @@
         </div>
         <ul class="brand-pillars">
           <li class="brand-pill"><i class="fa-solid fa-circle-nodes"></i>Collaborative Spirit</li>
-          <li class="brand-pill"><i class="fa-solid fa-sparkles"></i>Joyful Innovation</li>
+          <li class="brand-pill"><i class="fa-solid fa-compass"></i>Joyful Innovation</li>
           <li class="brand-pill"><i class="fa-solid fa-hand-holding-heart"></i>Care in Every Step</li>
           <li class="brand-pill"><i class="fa-solid fa-graduation-cap"></i>Beauty Education</li>
         </ul>
       </section>
 
-      <!-- 🌸 PRODUCTS SECTION -->
-      <section id="products">
-        <h2 class="section-heading">Emina Stars You’ll Love ✨</h2>
+      <!-- PRODUCTS SECTION -->
+      <section id="products" class="section-base">
+        <h2 class="section-heading">Emina Stars You'll Love ✨</h2>
         <p class="section-subtitle">
           Swipe through our favorite picks—each product is a joyful blend of skin-loving formulas,
           playful colors, and pocket-friendly prices ready to brighten your routine.
         </p>
 
         <div class="product-row">
-          <button type="button" class="carousel-control products-prev" aria-label="Previous products">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
           <div class="product-track" tabindex="0">
             <article class="product-card">
               <div class="product-image">
@@ -342,7 +299,7 @@
                 />
               </div>
               <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-sparkles"></i> Glass-Lip Shine</span>
+                <span class="product-tag"><i class="fa-solid fa-fire"></i> Glass-Lip Shine</span>
                 <h3 class="product-title">Glossy Stain 01 Autumn Bell</h3>
                 <div class="product-meta">
                   <span>Lip Gloss</span>
@@ -384,7 +341,7 @@
                 />
               </div>
               <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-bubbles"></i> Amino Clean</span>
+                <span class="product-tag"><i class="fa-solid fa-soap"></i> Amino Clean</span>
                 <h3 class="product-title">GloRad+ Amino ProCleanser</h3>
                 <div class="product-meta">
                   <span>Face Wash</span>
@@ -419,56 +376,17 @@
               </div>
             </article>
           </div>
-          <button type="button" class="carousel-control products-next" aria-label="Next products">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-control products-prev" aria-label="Previous products">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button type="button" class="carousel-control products-next" aria-label="Next products">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
 
         <div class="product-data-grid">
-          <div class="info-card promo-table-card">
-            <span class="promo-badge"><i class="fa-solid fa-ticket-simple"></i> Limited Offers</span>
-            <h3>Sweet Deals for Glow Squad</h3>
-            <p class="promo-subtitle">
-              Bundle up your routine with exclusive savings this month. Shop online or in stores and
-              enjoy extra treats for you and your besties.
-            </p>
-            <table class="promo-table">
-              <thead>
-                <tr>
-                  <th>Promo Bundle</th>
-                  <th>Includes</th>
-                  <th>Highlight</th>
-                  <th>Promo Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-sun"></i> Sun Battle Power Pair</span></td>
-                  <td>Hydraburst SPF 50 + Cica Fighter SPF 50</td>
-                  <td>Free SPF sachet & pink tote</td>
-                  <td class="promo-price">IDR 85.000</td>
-                </tr>
-                <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-face-kiss-wink-heart"></i> Muzik Tiger Lip Pack</span></td>
-                  <td>Airy Surprise Tint 01 Y2K + Glossy Stain Autumn Bell</td>
-                  <td>Limited Muzik Tiger zipper pouch</td>
-                  <td class="promo-price">IDR 118.000</td>
-                </tr>
-                <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-eye"></i> Glow & Go Eye Rescue</span></td>
-                  <td>Eye Wake Up Roller + Water-Sphere Serum</td>
-                  <td>Extra 10% off for Glow Club members</td>
-                  <td class="promo-price">IDR 165.000</td>
-                </tr>
-                <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-sparkles"></i> Fresh Start Glow Kit</span></td>
-                  <td>Amino ProCleanser + Hydraburst SPF 50</td>
-                  <td>Includes travel-friendly mist 15 ml</td>
-                  <td class="promo-price">IDR 99.000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
           <div class="products-lists">
             <div class="info-card table-card">
               <h3>Product Snapshot</h3>
@@ -545,6 +463,58 @@
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="offers" class="section-base">
+        <h2 class="section-heading">Glow Squad Offers 💖</h2>
+        <p class="section-subtitle">
+          Treat yourself with curated bundles and seasonal perks made to keep your routine sweet, protected,
+          and always on budget.
+        </p>
+        <div class="info-card promo-table-card">
+          <span class="promo-badge"><i class="fa-solid fa-ticket-simple"></i> Limited Offers</span>
+          <h3>Sweet Deals for Glow Squad</h3>
+          <p class="promo-subtitle">
+            Bundle up your routine with exclusive savings this month. Shop online or in stores and enjoy
+            extra treats for you and your besties.
+          </p>
+          <table class="promo-table">
+            <thead>
+              <tr>
+                <th>Promo Bundle</th>
+                <th>Includes</th>
+                <th>Highlight</th>
+                <th>Promo Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="bundle-pill"><i class="fa-solid fa-sun"></i> Sun Battle Power Pair</span></td>
+                <td>Hydraburst SPF 50 + Cica Fighter SPF 50</td>
+                <td>Free SPF sachet & pink tote</td>
+                <td class="promo-price">IDR 85.000</td>
+              </tr>
+              <tr>
+                <td><span class="bundle-pill"><i class="fa-solid fa-face-kiss-wink-heart"></i> Muzik Tiger Lip Pack</span></td>
+                <td>Airy Surprise Tint 01 Y2K + Glossy Stain Autumn Bell</td>
+                <td>Limited Muzik Tiger zipper pouch</td>
+                <td class="promo-price">IDR 118.000</td>
+              </tr>
+              <tr>
+                <td><span class="bundle-pill"><i class="fa-solid fa-eye"></i> Glow & Go Eye Rescue</span></td>
+                <td>Eye Wake Up Roller + Water-Sphere Serum</td>
+                <td>Extra 10% off for Glow Club members</td>
+                <td class="promo-price">IDR 165.000</td>
+              </tr>
+              <tr>
+                <td><span class="bundle-pill"><i class="fa-solid fa-sparkles"></i> Fresh Start Glow Kit</span></td>
+                <td>Amino ProCleanser + Hydraburst SPF 50</td>
+                <td>Includes travel-friendly mist 15 ml</td>
+                <td class="promo-price">IDR 99.000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 

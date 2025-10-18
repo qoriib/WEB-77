@@ -64,30 +64,6 @@ navLinks.forEach((anchor) => {
   });
 });
 
-const observedSections = Array.from(navLinks)
-  .map((link) => document.querySelector(link.getAttribute("href")))
-  .filter(Boolean);
-
-if (observedSections.length) {
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navLinks.forEach((link) =>
-            link.classList.toggle(
-              "active-link",
-              link.getAttribute("href") === `#${entry.target.id}`
-            )
-          );
-        }
-      });
-    },
-    { threshold: 0.55 }
-  );
-
-  observedSections.forEach((section) => sectionObserver.observe(section));
-}
-
 function updateProductControls() {
   if (!productTrack || !productPrev || !productNext) return;
   const maxScroll = productTrack.scrollWidth - productTrack.clientWidth - 5;

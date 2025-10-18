@@ -6,6 +6,10 @@ const navLinks = document.querySelectorAll('nav a[href^="#"]');
 const productTrack = document.querySelector(".product-track");
 const productPrev = document.querySelector(".products-prev");
 const productNext = document.querySelector(".products-next");
+const loginButton = document.getElementById("login-action");
+const joinSection = document.getElementById("join");
+const joinFormCard = document.querySelector("#join .form-card");
+const joinNameInput = document.getElementById("name");
 
 let currentSlide = 0;
 let slideInterval;
@@ -117,6 +121,19 @@ if (productTrack && productPrev && productNext) {
   });
 
   window.addEventListener("resize", updateProductControls);
+}
+
+if (loginButton && joinSection) {
+  loginButton.addEventListener("click", () => {
+    joinSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (joinFormCard) {
+      joinFormCard.classList.add("highlight");
+      setTimeout(() => joinFormCard.classList.remove("highlight"), 3200);
+    }
+    if (joinNameInput) {
+      setTimeout(() => joinNameInput.focus(), 600);
+    }
+  });
 }
 
 const joinForm = document.getElementById("join-form");

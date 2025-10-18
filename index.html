@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emina Cosmetics – Born to Be Loved</title>
+    <title>Emina Cosmetics - Born to Be Loved</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,800 +17,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <style>
-      :root {
-        --pink-soft: #ffcce0;
-        --pink-bold: #ff66a3;
-        --pink-light: #fff4f9;
-        --lavender: #eff0ff;
-        --text-dark: #413044;
-        --text-muted: #7a6a7e;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        color: var(--text-dark);
-        background-color: #ffffff;
-      }
-
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        backdrop-filter: blur(18px);
-        background-color: rgba(255, 255, 255, 0.92);
-        border-bottom: 1px solid rgba(255, 204, 224, 0.6);
-        box-shadow: 0 8px 24px rgba(255, 102, 163, 0.08);
-      }
-
-      .header-shell {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 1rem 1.5rem 1.2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.85rem;
-      }
-
-      .header-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        background: rgba(255, 255, 255, 0.6);
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        border-radius: 18px;
-        padding: 0.7rem 1.2rem;
-        backdrop-filter: blur(18px);
-        box-shadow: 0 12px 28px rgba(255, 102, 163, 0.12);
-      }
-
-      .header-top {
-        font-size: 0.95rem;
-        flex-wrap: wrap;
-      }
-
-      .brand-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.7rem;
-        font-size: 1.35rem;
-        font-weight: 600;
-        color: var(--text-dark);
-        text-decoration: none;
-        letter-spacing: 0.08em;
-      }
-
-      .brand-name {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        line-height: 1.05;
-      }
-
-      .brand-icon {
-        width: 42px;
-        height: 42px;
-        border-radius: 14px;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        color: #ffffff;
-        font-size: 1.1rem;
-        box-shadow: 0 12px 26px rgba(255, 102, 163, 0.25);
-      }
-
-      .brand-tagline {
-        font-size: 0.75rem;
-        font-weight: 500;
-        color: var(--text-muted);
-        text-transform: uppercase;
-        letter-spacing: 0.22em;
-      }
-
-      .login-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.55rem;
-        padding: 0.55rem 1.2rem;
-        border-radius: 999px;
-        border: 1px solid rgba(255, 102, 163, 0.35);
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 235, 243, 0.9));
-        color: var(--pink-bold);
-        font-weight: 600;
-        font-size: 0.9rem;
-        cursor: pointer;
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-      }
-
-      .login-btn i {
-        font-size: 1rem;
-      }
-
-      .login-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 14px 30px rgba(255, 102, 163, 0.25);
-      }
-
-      .header-nav {
-        justify-content: center;
-        padding: 0.45rem 1.1rem;
-      }
-
-      .header-nav nav {
-        width: 100%;
-      }
-
-      nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        gap: 1.1rem;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      nav a {
-        position: relative;
-        color: var(--text-dark);
-        text-decoration: none;
-        font-weight: 500;
-        padding: 0.3rem 0.2rem;
-        text-transform: uppercase;
-        font-size: 0.85rem;
-        transition: color 0.3s ease;
-      }
-
-      nav a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -0.4rem;
-        width: 100%;
-        height: 3px;
-        border-radius: 999px;
-        background-color: var(--pink-bold);
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: transform 0.3s ease;
-      }
-
-      nav a:hover,
-      nav a:focus {
-        color: var(--pink-bold);
-      }
-
-      nav a:hover::after,
-      nav a:focus::after,
-      nav a.active-link::after {
-        transform: scaleX(1);
-      }
-
-      main {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 3.5rem 1.5rem 4.5rem;
-      }
-
-      section {
-        position: relative;
-        margin-bottom: 3.5rem;
-        background-color: #ffffff;
-        padding: 2.4rem 2.4rem 2.6rem;
-        border-radius: 28px;
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        box-shadow: 0 16px 32px rgba(255, 102, 163, 0.06);
-        overflow: hidden;
-        scroll-margin-top: 120px;
-      }
-
-      .hero {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: 0;
-        background: none;
-        border: none;
-        box-shadow: none;
-      }
-
-      .hero::after {
-        display: none;
-      }
-
-      .hero-shell {
-        position: relative;
-        width: 100%;
-        padding: 2.9rem 2.6rem 3.6rem;
-        border-radius: 32px;
-        background: linear-gradient(135deg, #ffeec7, #ffcce0 40%, #ffffff 85%);
-        border: 1px solid rgba(255, 204, 224, 0.4);
-        box-shadow: 0 30px 60px rgba(255, 171, 206, 0.25);
-        overflow: hidden;
-      }
-
-      .hero-shell::before {
-        content: "";
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.45);
-        filter: blur(20px);
-        top: -60px;
-        right: -40px;
-      }
-
-      .slideshow {
-        width: 100%;
-        min-height: 520px;
-        position: relative;
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        padding: 0.9rem;
-      }
-
-      .slide {
-        position: absolute;
-        inset: 0;
-        display: grid;
-        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-        align-items: center;
-        padding: 2.8rem 3.2rem;
-        gap: 3rem;
-        min-height: 360px;
-        background-color: rgba(255, 255, 255, 0.78);
-        backdrop-filter: blur(18px);
-        border-radius: 28px;
-        box-shadow: 0 32px 68px rgba(255, 102, 163, 0.18);
-        opacity: 0;
-        transform: translateY(26px);
-        transition: opacity 0.55s ease, transform 0.55s ease;
-      }
-
-      .slide.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .slide-copy {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .slide h2 {
-        font-size: 2.4rem;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        color: var(--pink-bold);
-        margin-bottom: 0.2rem;
-      }
-
-      .slide p {
-        max-width: 520px;
-        font-size: 1.05rem;
-        color: var(--text-dark);
-        line-height: 1.75;
-      }
-
-      .slide-visual {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1.2rem;
-      }
-
-      .slide-visual::before {
-        content: "";
-        position: absolute;
-        width: clamp(260px, 40vw, 340px);
-        height: clamp(260px, 40vw, 340px);
-        border-radius: 35% 65% 60% 40% / 45% 55% 40% 60%;
-        background: radial-gradient(circle at top, rgba(255, 255, 255, 0.85), rgba(255, 204, 224, 0.55));
-        box-shadow: 0 30px 60px rgba(255, 102, 163, 0.25);
-        filter: blur(0.5px);
-      }
-
-      .slide-visual img {
-        position: relative;
-        width: min(280px, 90%);
-        aspect-ratio: 1;
-        border-radius: 20px;
-        box-shadow: 0 28px 58px rgba(65, 48, 68, 0.25);
-        object-fit: cover;
-      }
-
-      .slide-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.45rem 0.9rem;
-        border-radius: 999px;
-        background: linear-gradient(135deg, #ffd5eb, #ffe8f6);
-        color: var(--text-dark);
-        font-size: 0.85rem;
-        font-weight: 500;
-      }
-
-      .slide-features {
-        list-style: none;
-        margin: 1rem 0 0;
-        padding: 0;
-        display: grid;
-        gap: 0.75rem;
-      }
-
-      .slide-features li {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        padding: 0.7rem 1rem;
-        border-radius: 16px;
-        background: rgba(255, 235, 243, 0.7);
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        color: var(--text-dark);
-        font-weight: 500;
-      }
-
-      .slide-features i {
-        color: var(--pink-bold);
-        font-size: 1.1rem;
-      }
-
-      .slide-steps {
-        list-style: none;
-        margin: 1rem 0 0;
-        padding: 0;
-        counter-reset: step-count;
-        display: grid;
-        gap: 0.85rem;
-      }
-
-      .slide-steps li {
-        counter-increment: step-count;
-        position: relative;
-        padding: 1rem 1rem 1rem 3.5rem;
-        border-radius: 18px;
-        background: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(239, 240, 255, 0.8);
-        box-shadow: 0 10px 24px rgba(255, 102, 163, 0.12);
-        font-weight: 500;
-        color: var(--text-dark);
-      }
-
-      .slide-steps li::before {
-        content: counter(step-count);
-        position: absolute;
-        left: 1.1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 2.2rem;
-        height: 2.2rem;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        color: #ffffff;
-        font-weight: 600;
-        box-shadow: 0 12px 26px rgba(255, 102, 163, 0.25);
-      }
-
-      .slide-note {
-        font-size: 0.93rem;
-        color: var(--text-muted);
-        margin-top: 0.8rem;
-      }
-
-      .slide-note i {
-        color: var(--pink-bold);
-        margin-right: 0.45rem;
-      }
-
-      .slide-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-top: 1.1rem;
-      }
-
-      .slide-meta span {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.5rem 0.95rem;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.78);
-        border: 1px solid rgba(255, 204, 224, 0.55);
-        color: var(--pink-bold);
-        font-size: 0.85rem;
-        font-weight: 500;
-      }
-
-      .slide-meta i {
-        color: var(--pink-bold);
-      }
-
-      .slide-controls {
-        position: absolute;
-        bottom: 2rem;
-        right: 2.4rem;
-        transform: none;
-        display: flex;
-        gap: 1rem;
-      }
-
-      .slide-controls button {
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        color: #ffffff;
-        border: none;
-        border-radius: 18px;
-        padding: 0.65rem 0.75rem;
-        width: 46px;
-        height: 46px;
-        display: grid;
-        place-items: center;
-        font-size: 1.15rem;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 16px 34px rgba(255, 102, 163, 0.25);
-      }
-
-      .slide-controls button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 16px 32px rgba(255, 102, 163, 0.22);
-      }
-
-      .grid-two {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.8rem;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: #ffffff;
-        border-radius: 24px;
-        overflow: hidden;
-        box-shadow: 0 12px 32px rgba(255, 204, 224, 0.25);
-      }
-
-      th,
-      td {
-        padding: 1rem 1.2rem;
-        border-bottom: 1px solid rgba(239, 240, 255, 0.8);
-        text-align: left;
-        font-size: 0.98rem;
-      }
-
-      th {
-        background: linear-gradient(90deg, rgba(255, 221, 238, 0.7), rgba(255, 255, 255, 0.95));
-        color: var(--text-dark);
-        font-weight: 600;
-      }
-
-      tbody tr:nth-child(even) {
-        background-color: rgba(255, 245, 250, 0.6);
-      }
-
-      tbody td:first-child {
-        font-weight: 600;
-        color: var(--text-dark);
-      }
-
-      tr:last-child td {
-        border-bottom: none;
-      }
-
-      ol,
-      ul {
-        margin: 0 0 1rem 1.4rem;
-      }
-
-      ol li,
-      ul li {
-        margin-bottom: 0.55rem;
-        color: var(--text-muted);
-      }
-
-      .section-subtitle {
-        font-size: 1.05rem;
-        color: var(--text-muted);
-        max-width: 640px;
-        line-height: 1.8;
-        margin-bottom: 1.8rem;
-      }
-
-      ol li strong {
-        color: var(--text-dark);
-      }
-
-      .highlight-card {
-        background: linear-gradient(145deg, rgba(255, 238, 246, 0.9), rgba(255, 255, 255, 0.95));
-        border-radius: 24px;
-        padding: 1.8rem;
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        box-shadow: 0 16px 36px rgba(255, 102, 163, 0.12);
-      }
-
-      .about-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
-        gap: 2.4rem;
-        margin-top: 2.2rem;
-      }
-
-      .about-column {
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem;
-      }
-
-      .info-card {
-        background: linear-gradient(150deg, rgba(255, 255, 255, 0.92), rgba(255, 240, 248, 0.85));
-        border-radius: 24px;
-        padding: 2rem;
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        box-shadow: 0 20px 42px rgba(255, 102, 163, 0.12);
-      }
-
-      .about-story-card {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .about-story-card::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(circle at top left, rgba(255, 204, 224, 0.3), transparent 60%);
-        pointer-events: none;
-      }
-
-      .about-story-card > * {
-        position: relative;
-        z-index: 1;
-      }
-
-      .about-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 1rem;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.75);
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        color: var(--pink-bold);
-        font-weight: 600;
-        margin-bottom: 0.9rem;
-      }
-
-      .about-badge i {
-        color: var(--pink-bold);
-      }
-
-      .about-story-card p {
-        margin-bottom: 1rem;
-        color: var(--text-muted);
-      }
-
-      .about-story-card .quote {
-        font-size: 1.1rem;
-        color: var(--text-dark);
-        font-weight: 500;
-        line-height: 1.8;
-      }
-
-      .about-story-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.7rem;
-        margin-top: 1.4rem;
-      }
-
-      .about-story-meta span {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.55rem 0.95rem;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.7);
-        border: 1px solid rgba(239, 240, 255, 0.8);
-        color: var(--text-dark);
-        font-size: 0.85rem;
-        font-weight: 500;
-      }
-
-      .about-story-meta i {
-        color: var(--pink-bold);
-      }
-
-      .table-card {
-        padding: 0;
-        overflow: hidden;
-      }
-
-      .table-card h3 {
-        padding: 1.6rem 2rem 0.6rem;
-      }
-
-      .table-card table {
-        border-radius: 0 0 24px 24px;
-      }
-
-      .brand-stats {
-        display: grid;
-        gap: 1.1rem;
-      }
-
-      .stat-item {
-        display: flex;
-        align-items: center;
-        gap: 0.9rem;
-        padding: 0.9rem 1.1rem;
-        border-radius: 18px;
-        background: rgba(255, 255, 255, 0.78);
-        border: 1px solid rgba(255, 204, 224, 0.4);
-      }
-
-      .stat-item i {
-        width: 42px;
-        height: 42px;
-        border-radius: 16px;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, #ffd5eb, #ffeafa);
-        color: var(--pink-bold);
-        font-size: 1.1rem;
-        box-shadow: 0 12px 28px rgba(255, 102, 163, 0.16);
-      }
-
-      .stat-copy strong {
-        display: block;
-        font-size: 1rem;
-        color: var(--text-dark);
-      }
-
-      .stat-copy span {
-        font-size: 0.88rem;
-        color: var(--text-muted);
-      }
-
-      .brand-pillars {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.9rem;
-        margin: 2.4rem 0 0;
-        padding: 0;
-      }
-
-      .brand-pill {
-        flex: 1 1 180px;
-        min-width: 160px;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.65rem;
-        padding: 0.8rem 1rem;
-        border-radius: 14px;
-        background: rgba(255, 235, 243, 0.65);
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        color: var(--text-dark);
-        font-weight: 500;
-      }
-
-      .brand-pill i {
-        color: var(--pink-bold);
-      }
-
-      .promo-table-card {
-        position: relative;
-        padding: 2.2rem 2rem;
-        background: linear-gradient(155deg, rgba(255, 255, 255, 0.94), rgba(255, 240, 248, 0.75));
-      }
-
-      .promo-table-card::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: 22px;
-        background: radial-gradient(circle at top right, rgba(255, 204, 224, 0.28), transparent 60%);
-        pointer-events: none;
-      }
-
-      .promo-table-card > * {
-        position: relative;
-        z-index: 1;
-      }
-
-      .promo-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.55rem;
-        padding: 0.5rem 1rem;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.75);
-        border: 1px solid rgba(255, 204, 224, 0.5);
-        color: var(--pink-bold);
-        font-weight: 600;
-        margin-bottom: 0.9rem;
-      }
-
-      .promo-badge i {
-        color: var(--pink-bold);
-      }
-
-      .promo-table-card h3 {
-        margin-bottom: 0.4rem;
-      }
-
-      .promo-subtitle {
-        font-size: 0.95rem;
-        color: var(--text-muted);
-        margin: 0 0 1.2rem;
-      }
-
-      .promo-table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0;
-        background: rgba(255, 255, 255, 0.82);
-        border-radius: 18px;
-        overflow: hidden;
-        box-shadow: 0 16px 34px rgba(255, 102, 163, 0.12);
-      }
-
-      .promo-table thead th {
-        background: linear-gradient(90deg, rgba(255, 221, 238, 0.75), rgba(255, 255, 255, 0.95));
-        padding: 0.85rem 1.1rem;
-        text-align: left;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--text-dark);
-      }
-
-      .promo-table tbody td {
-        padding: 0.85rem 1.1rem;
-        font-size: 0.9rem;
-        color: var(--text-muted);
-        border-bottom: 1px solid rgba(255, 204, 224, 0.4);
-      }
-
-      .promo-table tbody tr:last-child td {
-        border-bottom: none;
-      }
-
-      .promo-table tbody tr:nth-child(even) {
-        background: rgba(255, 240, 248, 0.55);
-      }
-
-      .bundle-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.4rem 0.85rem;
-        border-radius: 999px;
-        background: rgba(255, 235, 243, 0.85);
-        color: var(--pink-bold);
-        font-weight: 600;
-        font-size: 0.82rem;
-      }
-
-      .promo-price {
-        font-weight: 600;
-        color: var(--pink-bold);
-      }
+:root {
+  --pink-soft: #ffcce0;
+  --pink-bold: #ff66a3;
+  --pink-light: #fff4f9;
+  --lavender: #eff0ff;
+  --text-dark: #413044;
+  --text-muted: #7a6a7e;
+}
 
       .sr-only {
         position: absolute;
@@ -822,657 +36,6 @@
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border: 0;
-      }
-
-      .product-row {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 2.2rem;
-      }
-
-      .carousel-control {
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        color: #ffffff;
-        border: none;
-        border-radius: 999px;
-        width: 44px;
-        height: 44px;
-        display: grid;
-        place-items: center;
-        cursor: pointer;
-        box-shadow: 0 14px 28px rgba(255, 102, 163, 0.18);
-        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-      }
-
-      .carousel-control:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 18px 38px rgba(255, 102, 163, 0.28);
-      }
-
-      .carousel-control:disabled {
-        opacity: 0.4;
-        cursor: not-allowed;
-        transform: none;
-        box-shadow: none;
-      }
-
-      .product-track {
-        display: flex;
-        gap: 1.1rem;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-        padding: 0.25rem 0 0.5rem;
-        flex: 1 1 auto;
-      }
-
-      .product-track::-webkit-scrollbar {
-        display: none;
-      }
-
-      .product-card {
-        scroll-snap-align: start;
-        background: #ffffff;
-        border-radius: 22px;
-        border: 1px solid rgba(255, 204, 224, 0.4);
-        box-shadow: 0 16px 30px rgba(255, 102, 163, 0.12);
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        min-width: 250px;
-        max-width: 280px;
-      }
-
-      .product-image {
-        position: relative;
-        padding: 1.25rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 240, 248, 0.5);
-      }
-
-      .product-image img {
-        position: relative;
-        width: min(200px, 80%);
-        aspect-ratio: 3 / 4;
-        object-fit: contain;
-        filter: drop-shadow(0 18px 36px rgba(65, 48, 68, 0.25));
-        z-index: 1;
-      }
-
-      .product-body {
-        padding: 1.6rem 1.8rem 1.8rem;
-        display: grid;
-        gap: 0.6rem;
-      }
-
-      .product-tag {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.4rem 0.9rem;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.75);
-        border: 1px solid rgba(255, 204, 224, 0.5);
-        color: var(--pink-bold);
-        font-size: 0.8rem;
-        font-weight: 600;
-        width: fit-content;
-      }
-
-      .product-title {
-        font-size: 1.25rem;
-        color: var(--text-dark);
-        margin: 0.2rem 0;
-      }
-
-      .product-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        font-size: 0.85rem;
-        color: var(--text-muted);
-      }
-
-      .product-price {
-        font-weight: 600;
-        color: var(--pink-bold);
-        font-size: 1rem;
-      }
-
-      .product-benefits {
-        list-style: none;
-        margin: 0.6rem 0 0;
-        padding: 0;
-        display: grid;
-        gap: 0.5rem;
-      }
-
-      .product-benefits li {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.88rem;
-        color: var(--text-dark);
-      }
-
-      .product-benefits i {
-        color: var(--pink-bold);
-      }
-
-      .product-data-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-        margin-top: 2.6rem;
-      }
-
-      .products-lists {
-        display: grid;
-        gap: 1.4rem;
-      }
-
-      .list-card {
-        background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(255, 240, 248, 0.82));
-        border-radius: 22px;
-        padding: 1.8rem;
-        border: 1px solid rgba(255, 204, 224, 0.4);
-        box-shadow: 0 16px 38px rgba(255, 102, 163, 0.12);
-      }
-
-      .list-card h3 {
-        margin-bottom: 1rem;
-      }
-
-      .list-card ol,
-      .list-card ul {
-        margin: 0;
-      }
-
-      .list-card li {
-        margin-bottom: 0.5rem;
-      }
-
-      @media (max-width: 980px) {
-        .product-row {
-          flex-wrap: wrap;
-        }
-
-        .carousel-control {
-          order: 2;
-        }
-
-        .products-prev {
-          order: 1;
-        }
-
-        .product-track {
-          order: 0;
-          width: 100%;
-          flex: 1 1 100%;
-          gap: 1rem;
-        }
-
-        .product-card {
-          min-width: min(320px, 75%);
-        }
-
-        .product-data-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .product-card {
-          min-width: 240px;
-          min-height: 320px;
-        }
-      }
-
-      h2,
-      h3 {
-        margin-top: 0;
-      }
-
-      h3 {
-        font-size: 1.32rem;
-        color: var(--text-dark);
-      }
-
-      .form-card {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 238, 246, 0.65));
-        padding: 2.4rem;
-        border-radius: 28px;
-        border: 1px solid rgba(255, 204, 224, 0.4);
-        box-shadow: 0 25px 50px rgba(255, 102, 163, 0.15);
-      }
-
-      form {
-        display: grid;
-        gap: 1.2rem;
-      }
-
-      label {
-        font-weight: 500;
-        display: block;
-        margin-bottom: 0.35rem;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      input[type="password"],
-      textarea,
-      select {
-        width: 100%;
-        padding: 0.85rem 1rem;
-        border-radius: 14px;
-        border: 1px solid rgba(255, 102, 163, 0.35);
-        background-color: rgba(255, 255, 255, 0.9);
-        font-size: 1rem;
-        transition: border 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      textarea {
-        min-height: 140px;
-      }
-
-      input:focus,
-      textarea:focus,
-      select:focus {
-        border-color: var(--pink-bold);
-        box-shadow: 0 0 0 4px rgba(255, 102, 163, 0.15);
-        outline: none;
-      }
-
-      .choices {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-
-      .choices label {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-weight: 400;
-        flex: 1 1 180px;
-        padding: 0.6rem 0.9rem;
-        border-radius: 14px;
-        background: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(255, 204, 224, 0.5);
-      }
-
-      .choices input[type="radio"],
-      .choices input[type="checkbox"] {
-        accent-color: var(--pink-bold);
-      }
-
-      .submit-btn {
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        color: #ffffff;
-        border: none;
-        padding: 0.95rem 2rem;
-        border-radius: 999px;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        width: fit-content;
-      }
-
-      .submit-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 18px 36px rgba(255, 102, 163, 0.35);
-      }
-
-      footer {
-        padding: 3.2rem 1.6rem 2.8rem;
-        color: var(--text-muted);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 235, 243, 0.85));
-        border-top: 1px solid rgba(255, 204, 224, 0.45);
-      }
-
-      .footer-shell {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        gap: 2.4rem;
-      }
-
-      .footer-newsletter {
-        display: grid;
-        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-        gap: 2rem;
-        background: linear-gradient(120deg, rgba(255, 240, 248, 0.9), rgba(255, 255, 255, 0.85));
-        border-radius: 26px;
-        padding: 2.4rem;
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        box-shadow: 0 22px 48px rgba(255, 102, 163, 0.12);
-      }
-
-      .footer-newsletter h3 {
-        font-size: 1.55rem;
-        color: var(--text-dark);
-        margin-bottom: 0.75rem;
-      }
-
-      .footer-newsletter p {
-        margin: 0;
-        color: var(--text-muted);
-      }
-
-      .footer-form {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .footer-input-group {
-        position: relative;
-        display: flex;
-        align-items: center;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        background: rgba(255, 255, 255, 0.85);
-        padding: 0.4rem;
-        box-shadow: 0 12px 26px rgba(255, 102, 163, 0.12);
-      }
-
-      .footer-input-group input[type="email"] {
-        flex: 1;
-        border: none;
-        background: transparent;
-        font-size: 0.95rem;
-        padding: 0.75rem 0.9rem;
-        color: var(--text-dark);
-      }
-
-      .footer-input-group input[type="email"]::placeholder {
-        color: rgba(65, 48, 68, 0.45);
-      }
-
-      .footer-input-group input[type="email"]:focus {
-        outline: none;
-      }
-
-      .footer-submit {
-        border: none;
-        border-radius: 14px;
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        color: #ffffff;
-        font-weight: 600;
-        padding: 0.75rem 1.3rem;
-        cursor: pointer;
-        box-shadow: 0 16px 34px rgba(255, 102, 163, 0.25);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .footer-submit:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 18px 36px rgba(255, 102, 163, 0.28);
-      }
-
-      .footer-policy {
-        font-size: 0.85rem;
-        color: var(--text-muted);
-      }
-
-      .footer-links {
-        display: grid;
-        gap: 1.6rem;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      }
-
-      .footer-links h4 {
-        margin-bottom: 0.6rem;
-        font-size: 1rem;
-        color: var(--text-dark);
-      }
-
-      .footer-links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        gap: 0.45rem;
-      }
-
-      .footer-links a {
-        color: var(--text-muted);
-        text-decoration: none;
-        font-size: 0.92rem;
-        transition: color 0.3s ease;
-      }
-
-      .footer-links a:hover {
-        color: var(--pink-bold);
-      }
-
-      .footer-social {
-        display: flex;
-        gap: 0.75rem;
-        margin-top: 0.8rem;
-      }
-
-      .footer-social a {
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        background: rgba(255, 255, 255, 0.85);
-        color: var(--pink-bold);
-        border: 1px solid rgba(255, 204, 224, 0.45);
-        box-shadow: 0 10px 22px rgba(255, 102, 163, 0.18);
-        transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-      }
-
-      .footer-social a:hover {
-        transform: translateY(-2px);
-        color: #ffffff;
-        background: linear-gradient(135deg, #ff86bd, #ff66a3);
-        box-shadow: 0 14px 28px rgba(255, 102, 163, 0.25);
-      }
-
-      .footer-bottom {
-        text-align: center;
-        font-size: 0.9rem;
-        color: var(--text-muted);
-        border-top: 1px solid rgba(255, 204, 224, 0.35);
-        padding-top: 1.6rem;
-      }
-
-      .footer-bottom span {
-        display: block;
-        margin-top: 0.3rem;
-        font-size: 0.85rem;
-      }
-      }
-
-      @media (max-width: 1024px) {
-        .slide {
-          padding: 2.6rem 2.4rem;
-          gap: 2.4rem;
-        }
-      }
-
-      @media (max-width: 900px) {
-        .hero-shell {
-          padding: 2.6rem 1.8rem 3.2rem;
-        }
-
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .slideshow {
-          min-height: 480px;
-        }
-
-        .slide {
-          grid-template-columns: 1fr;
-          text-align: center;
-          padding: 2.4rem 2rem 2.8rem;
-          gap: 2.2rem;
-        }
-
-        .slide-copy {
-          align-items: center;
-          text-align: center;
-        }
-
-        .slide p {
-          max-width: 620px;
-        }
-
-        .slide-meta {
-          justify-content: center;
-        }
-
-        .slide-features li {
-          justify-content: center;
-        }
-
-        .slide-note {
-          text-align: center;
-        }
-
-        .slide-visual {
-          padding: 0.8rem 0 0;
-        }
-
-        .slide-visual::before {
-          width: clamp(220px, 55vw, 280px);
-          height: clamp(220px, 55vw, 280px);
-        }
-
-        .slide-controls {
-          bottom: 1.2rem;
-          right: auto;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        .footer-newsletter {
-          grid-template-columns: 1fr;
-          text-align: center;
-        }
-
-        .footer-form {
-          justify-items: center;
-        }
-
-        .footer-input-group {
-          width: 100%;
-          max-width: 420px;
-        }
-
-        .footer-links {
-          grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        }
-      }
-
-      @media (max-width: 700px) {
-        .header-row {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.6rem;
-        }
-
-        .header-top {
-          align-items: flex-start;
-        }
-
-        .login-btn {
-          align-self: stretch;
-          justify-content: center;
-        }
-
-        .brand-pillars {
-          gap: 0.75rem;
-        }
-
-        .brand-pill {
-          flex: 1 1 140px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        header {
-          border-radius: 0 0 18px 18px;
-        }
-
-        nav ul {
-          gap: 0.75rem;
-        }
-
-        .slideshow {
-          min-height: 420px;
-        }
-
-        .slide h2 {
-          font-size: 2rem;
-        }
-
-        section {
-          padding: 2.2rem 1.6rem;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .hero-shell {
-          padding: 2.2rem 1.4rem 2.6rem;
-        }
-
-        .slide {
-          padding: 2rem 1.6rem 2.4rem;
-        }
-
-        .slide-steps li {
-          padding-left: 3rem;
-        }
-
-        .slide h2 {
-          font-size: 1.8rem;
-        }
-
-        .slide-visual::before {
-          width: clamp(200px, 60vw, 240px);
-          height: clamp(200px, 60vw, 240px);
-        }
-
-        .slide-visual img {
-          width: min(240px, 85%);
-        }
-
-        .footer-shell {
-          gap: 2rem;
-        }
-
-        .footer-newsletter {
-          padding: 2rem 1.6rem;
-        }
-
-        .footer-input-group {
-          flex-direction: column;
-          gap: 0.6rem;
-          align-items: stretch;
-          padding: 0.6rem 0.8rem 0.9rem;
-        }
-
-        .footer-input-group input[type="email"] {
-          padding: 0.7rem 0.8rem;
-        }
-
-        .footer-submit {
-          width: 100%;
-        }
-
-        .footer-links {
-          gap: 1.2rem;
-        }
       }
     </style>
   </head>
@@ -1487,7 +50,7 @@
               <span class="brand-tagline">Born to Be Loved</span>
             </span>
           </a>
-          <button type="button" class="login-btn">
+          <button type="button" class="login-btn" id="login-action">
             <i class="fa-regular fa-user"></i>
             <span>Login</span>
           </button>
@@ -1527,7 +90,7 @@
               </div>
               <div class="slide-visual">
                 <img
-                  src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=600&q=80"
+                  src="./imgs/slide-1.jpg"
                   alt="Soft pink makeup products arranged on a pastel background"
                 />
               </div>
@@ -1711,105 +274,147 @@
             <article class="product-card">
               <div class="product-image">
                 <img
-                  src="https://images.unsplash.com/photo-1600180758890-6d772a4d3915?auto=format&fit=crop&w=600&q=80"
-                  alt="Emina Sun Battle SPF 35 tube"
+                  src="imgs/product-1.png"
+                  alt="Emina Sun Battle SPF 50 PA++++ Barrier Hydraburst Sunscreen"
                 />
               </div>
               <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-shield-heart"></i> Daily SPF Hero</span>
-                <h3 class="product-title">Sun Protection SPF 35</h3>
+                <span class="product-tag"><i class="fa-solid fa-shield-heart"></i> SPF Barrier Hero</span>
+                <h3 class="product-title">Sun Battle SPF 50 Hydraburst</h3>
                 <div class="product-meta">
-                  <span>Sun Care</span>
-                  <span class="product-price">IDR 35.000</span>
-                </div>
-                <ul class="product-benefits">
-                  <li><i class="fa-solid fa-circle-check"></i>Lightweight & comfy texture</li>
-                  <li><i class="fa-solid fa-droplet"></i>Non-greasy finish, no white cast</li>
-                  <li><i class="fa-solid fa-sun"></i>Broad spectrum UV protection</li>
-                </ul>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80"
-                  alt="Emina Bright Stuff face wash bottle"
-                />
-              </div>
-              <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-star"></i> Bright Icon</span>
-                <h3 class="product-title">Bright Stuff Face Wash</h3>
-                <div class="product-meta">
-                  <span>Cleanser</span>
-                  <span class="product-price">IDR 32.000</span>
-                </div>
-                <ul class="product-benefits">
-                  <li><i class="fa-solid fa-circle-check"></i>Mild exfoliation for daily glow</li>
-                  <li><i class="fa-solid fa-seedling"></i>Niacinamide & summer plum combo</li>
-                  <li><i class="fa-solid fa-face-smile"></i>Leaves skin bouncy and refreshed</li>
-                </ul>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://images.unsplash.com/photo-1600181953294-85c8e10c5bd8?auto=format&fit=crop&w=600&q=80"
-                  alt="Emina Moist in a Bottle moisturizer"
-                />
-              </div>
-              <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-droplet"></i> Hydration Squad</span>
-                <h3 class="product-title">Moist in a Bottle</h3>
-                <div class="product-meta">
-                  <span>Moisturizer</span>
-                  <span class="product-price">IDR 58.000</span>
-                </div>
-                <ul class="product-benefits">
-                  <li><i class="fa-solid fa-circle-check"></i>Locks in moisture up to 12 hours</li>
-                  <li><i class="fa-solid fa-leaf"></i>Green tea & aloe to soothe redness</li>
-                  <li><i class="fa-solid fa-cloud-moon"></i>Ideal for AM & PM routines</li>
-                </ul>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
-                  alt="Emina Creamy Tint lip product"
-                />
-              </div>
-              <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-meteor"></i> Viral Favorite</span>
-                <h3 class="product-title">Creamy Tint</h3>
-                <div class="product-meta">
-                  <span>Makeup</span>
+                  <span>SPF 50</span>
                   <span class="product-price">IDR 45.000</span>
                 </div>
                 <ul class="product-benefits">
-                  <li><i class="fa-solid fa-circle-check"></i>Blurred matte finish, zero dryness</li>
-                  <li><i class="fa-solid fa-palette"></i>Available in 8 mood-boosting shades</li>
-                  <li><i class="fa-solid fa-heart"></i>Doubles as blush for instant flush</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Hydraburst barrier complex locks in moisture.</li>
+                  <li><i class="fa-solid fa-droplet"></i>Water-light gel melts without white cast.</li>
+                  <li><i class="fa-solid fa-sun"></i>PA++++ defense for humid, sunny days.</li>
                 </ul>
               </div>
             </article>
             <article class="product-card">
               <div class="product-image">
                 <img
-                  src="https://images.unsplash.com/photo-1582719478356-8912e0b92bdb?auto=format&fit=crop&w=600&q=80"
-                  alt="Emina Skin Buddy cleanser package"
+                  src="imgs/product-2.png"
+                  alt="Emina Sun Battle SPF 50 PA++++ Cica Acne Fighter Sunscreen"
                 />
               </div>
               <div class="product-body">
-                <span class="product-tag"><i class="fa-solid fa-fire-flame-curved"></i> Acne Care</span>
-                <h3 class="product-title">Skin Buddy Cleanser</h3>
+                <span class="product-tag"><i class="fa-solid fa-seedling"></i> Calming Shield</span>
+                <h3 class="product-title">Sun Battle SPF 50 Cica Fighter</h3>
                 <div class="product-meta">
-                  <span>Cleanser</span>
-                  <span class="product-price">IDR 40.000</span>
+                  <span>SPF 50</span>
+                  <span class="product-price">IDR 45.000</span>
                 </div>
                 <ul class="product-benefits">
-                  <li><i class="fa-solid fa-circle-check"></i>Controls oil without stripping</li>
-                  <li><i class="fa-solid fa-bolt"></i>Salicylic acid for blemish-prone skin</li>
-                  <li><i class="fa-solid fa-feather-pointed"></i>Soft foam for everyday comfort</li>
+                  <li><i class="fa-solid fa-circle-check"></i>Cica & allantoin soothe acne-prone skin.</li>
+                  <li><i class="fa-solid fa-wand-magic-sparkles"></i>Matte finish keeps oil in check.</li>
+                  <li><i class="fa-solid fa-sun-plant-wilt"></i>Lightweight, non-comedogenic SPF veil.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/product-3.png"
+                  alt="Emina Airy Surprise Tint 01 Y2K x Muzik Tiger"
+                />
+              </div>
+              <div class="product-body">
+                <span class="product-tag"><i class="fa-solid fa-meteor"></i> Muzik Tiger Collab</span>
+                <h3 class="product-title">Airy Surprise Tint 01 Y2K</h3>
+                <div class="product-meta">
+                  <span>Liptint</span>
+                  <span class="product-price">IDR 69.500</span>
+                </div>
+                <ul class="product-benefits">
+                  <li><i class="fa-solid fa-circle-check"></i>Airy texture hugs lips without drying.</li>
+                  <li><i class="fa-solid fa-heart"></i>Vibrant Y2K shade inspired by Muzik Tiger.</li>
+                  <li><i class="fa-solid fa-brush"></i>One swipe flush for lips & cheeks.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/product-4.png"
+                  alt="Emina Glossy Stain 01 Autumn Bell x Muzik Tiger"
+                />
+              </div>
+              <div class="product-body">
+                <span class="product-tag"><i class="fa-solid fa-sparkles"></i> Glass-Lip Shine</span>
+                <h3 class="product-title">Glossy Stain 01 Autumn Bell</h3>
+                <div class="product-meta">
+                  <span>Lip Gloss</span>
+                  <span class="product-price">IDR 56.000</span>
+                </div>
+                <ul class="product-benefits">
+                  <li><i class="fa-solid fa-circle-check"></i>Dual stain & gloss for lasting color.</li>
+                  <li><i class="fa-solid fa-tower-broadcast"></i>Ultra-comfy doe-foot glides smoothly.</li>
+                  <li><i class="fa-solid fa-palette"></i>Muzik Tiger art adds collectible vibes.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/product-5.png"
+                  alt="Emina GloRad+ Instant Refresh Puffy Eyes Eye Wake Up Roller"
+                />
+              </div>
+              <div class="product-body">
+                <span class="product-tag"><i class="fa-solid fa-eye"></i> Wake Up Eyes</span>
+                <h3 class="product-title">GloRad+ Eye Wake Up Roller</h3>
+                <div class="product-meta">
+                  <span>Serum</span>
+                  <span class="product-price">IDR 81.000</span>
+                </div>
+                <ul class="product-benefits">
+                  <li><i class="fa-solid fa-circle-check"></i>Cooling metal roller de-puffs instantly.</li>
+                  <li><i class="fa-solid fa-droplet"></i>Brightening peptides lighten dark circles.</li>
+                  <li><i class="fa-solid fa-face-smile"></i>Perfect for late-night study recoveries.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/product-6.png"
+                  alt="EMINA GloRad+ Hassle Free Cleanser Amino Fusion ProCleanser"
+                />
+              </div>
+              <div class="product-body">
+                <span class="product-tag"><i class="fa-solid fa-bubbles"></i> Amino Clean</span>
+                <h3 class="product-title">GloRad+ Amino ProCleanser</h3>
+                <div class="product-meta">
+                  <span>Face Wash</span>
+                  <span class="product-price">IDR 60.000</span>
+                </div>
+                <ul class="product-benefits">
+                  <li><i class="fa-solid fa-circle-check"></i>Amino fusion lifts dirt without stripping.</li>
+                  <li><i class="fa-solid fa-wand-magic-sparkles"></i>Leaves skin bouncy and clarified.</li>
+                  <li><i class="fa-solid fa-feather"></i>Foam cushion feels featherlight.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/product-7.png"
+                  alt="Emina GloRad+ High-Res Bright Glow Water-Sphere Serum"
+                />
+              </div>
+              <div class="product-body">
+                <span class="product-tag"><i class="fa-solid fa-droplet"></i> Glow Enhancer</span>
+                <h3 class="product-title">GloRad+ Water-Sphere Serum</h3>
+                <div class="product-meta">
+                  <span>Serum</span>
+                  <span class="product-price">IDR 94.000</span>
+                </div>
+                <ul class="product-benefits">
+                  <li><i class="fa-solid fa-circle-check"></i>Water-sphere tech boosts radiance fast.</li>
+                  <li><i class="fa-solid fa-flask"></i>Niacinamide & vitamin C brighten tone.</li>
+                  <li><i class="fa-solid fa-face-grin-stars"></i>Glass-skin finish without stickiness.</li>
                 </ul>
               </div>
             </article>
@@ -1838,28 +443,28 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-star"></i> Bright Start Kit</span></td>
-                  <td>Bright Stuff Face Wash + Serum Mini</td>
-                  <td>Free travel pouch worth 25K</td>
-                  <td class="promo-price">IDR 62.000</td>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-sun"></i> Sun Battle Power Pair</span></td>
+                  <td>Hydraburst SPF 50 + Cica Fighter SPF 50</td>
+                  <td>Free SPF sachet & pink tote</td>
+                  <td class="promo-price">IDR 85.000</td>
                 </tr>
                 <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-sun"></i> SPF Duo Day</span></td>
-                  <td>Sun Protection SPF 35 + Lip Balm</td>
-                  <td>Buy 1 get 20% off the second</td>
-                  <td class="promo-price">IDR 52.000</td>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-face-kiss-wink-heart"></i> Muzik Tiger Lip Pack</span></td>
+                  <td>Airy Surprise Tint 01 Y2K + Glossy Stain Autumn Bell</td>
+                  <td>Limited Muzik Tiger zipper pouch</td>
+                  <td class="promo-price">IDR 118.000</td>
                 </tr>
                 <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-heart"></i> BFF Glow Pack</span></td>
-                  <td>2x Creamy Tint (mix & match)</td>
-                  <td>Complimentary sticker set</td>
-                  <td class="promo-price">IDR 78.000</td>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-eye"></i> Glow & Go Eye Rescue</span></td>
+                  <td>Eye Wake Up Roller + Water-Sphere Serum</td>
+                  <td>Extra 10% off for Glow Club members</td>
+                  <td class="promo-price">IDR 165.000</td>
                 </tr>
                 <tr>
-                  <td><span class="bundle-pill"><i class="fa-solid fa-moon"></i> Night Repair Duo</span></td>
-                  <td>Moist in a Bottle + Sleeping Mask</td>
-                  <td>Extra 10% with membership card</td>
-                  <td class="promo-price">IDR 94.000</td>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-sparkles"></i> Fresh Start Glow Kit</span></td>
+                  <td>Amino ProCleanser + Hydraburst SPF 50</td>
+                  <td>Includes travel-friendly mist 15 ml</td>
+                  <td class="promo-price">IDR 99.000</td>
                 </tr>
               </tbody>
             </table>
@@ -1878,28 +483,46 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Bright Stuff Face Wash</td>
-                    <td>Skincare</td>
-                    <td>Removes impurities & brightens skin</td>
-                    <td>32.000</td>
-                  </tr>
-                  <tr>
-                    <td>Sun Protection SPF 35</td>
+                    <td>Sun Battle SPF 50 Hydraburst</td>
                     <td>Sun Care</td>
-                    <td>Non-greasy UV shield</td>
-                    <td>35.000</td>
-                  </tr>
-                  <tr>
-                    <td>Creamy Tint</td>
-                    <td>Makeup</td>
-                    <td>Intense color with soft matte finish</td>
+                    <td>Hydraburst barrier keeps skin hydrated</td>
                     <td>45.000</td>
                   </tr>
                   <tr>
-                    <td>Moist in a Bottle</td>
-                    <td>Skincare</td>
-                    <td>Hydrates with natural extracts</td>
-                    <td>58.000</td>
+                    <td>Sun Battle SPF 50 Cica Fighter</td>
+                    <td>Sun Care</td>
+                    <td>Cica + allantoin calm breakouts</td>
+                    <td>45.000</td>
+                  </tr>
+                  <tr>
+                    <td>Airy Surprise Tint 01 Y2K</td>
+                    <td>Liptint</td>
+                    <td>Air-light stain for lips & cheeks</td>
+                    <td>69.500</td>
+                  </tr>
+                  <tr>
+                    <td>Glossy Stain 01 Autumn Bell</td>
+                    <td>Lip Gloss</td>
+                    <td>Dual stain-gloss with glass shine</td>
+                    <td>56.000</td>
+                  </tr>
+                  <tr>
+                    <td>GloRad+ Eye Wake Up Roller</td>
+                    <td>Serum</td>
+                    <td>Cooling roller reduces puffiness</td>
+                    <td>81.000</td>
+                  </tr>
+                  <tr>
+                    <td>GloRad+ Amino ProCleanser</td>
+                    <td>Face Wash</td>
+                    <td>Amino foam lifts dirt gently</td>
+                    <td>60.000</td>
+                  </tr>
+                  <tr>
+                    <td>GloRad+ Water-Sphere Serum</td>
+                    <td>Serum</td>
+                    <td>Niacinamide + vitamin C brighten fast</td>
+                    <td>94.000</td>
                   </tr>
                 </tbody>
               </table>
@@ -1907,18 +530,18 @@
             <div class="list-card">
               <h3>Top 3 Routines to Try 💡</h3>
               <ol>
-                <li><strong>Cleanse</strong> with Skin Buddy Cleanser.</li>
-                <li><strong>Boost glow</strong> using Bright Stuff Serum.</li>
-                <li><strong>Lock in hydration</strong> with Moist in a Bottle cream.</li>
+                <li><strong>Cleanse</strong> with GloRad+ Amino ProCleanser.</li>
+                <li><strong>Treat</strong> using GloRad+ Water-Sphere Serum.</li>
+                <li><strong>Protect</strong> with Sun Battle Hydraburst SPF 50.</li>
               </ol>
             </div>
             <div class="list-card">
               <h3>Why Beauties Choose Emina 🌷</h3>
               <ul>
-                <li>Dermatologically tested for sensitive skin.</li>
-                <li>Accessible pricing for students.</li>
-                <li>Cruelty-free and vegan-friendly options.</li>
-                <li>Playful packaging sparks creativity.</li>
+                <li>Dermatologically tested formulas that suit young skin.</li>
+                <li>Cica, amino, and peptide blends calm and strengthen barriers.</li>
+                <li>Accessible pricing keeps daily routines budget-friendly.</li>
+                <li>Muzik Tiger collabs make every shelfie super cute.</li>
               </ul>
             </div>
           </div>

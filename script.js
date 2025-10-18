@@ -1,22 +1,47 @@
 async function loadPartials() {
   const includeNodes = document.querySelectorAll('[data-include]');
+
+  const loadWithFallback = async (src) => {
+    try {
+      const response = await fetch(src);
+      if (!response.ok) {
+        throw new Error(`Failed to load ${src}`);
+      }
+      return await response.text();
+    } catch (error) {
+      if (window.location.protocol === 'file:') {
+        return await new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open('GET', src, true);
+          xhr.onload = () => {
+            if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 0) {
+              resolve(xhr.responseText);
+            } else {
+              reject(error);
+            }
+          };
+          xhr.onerror = () => reject(error);
+          xhr.send();
+        });
+      }
+      throw error;
+    }
+  };
+
   const loaders = Array.from(includeNodes).map(async (node) => {
     const src = node.getAttribute('data-include');
     if (!src) {
       return;
     }
     try {
-      const response = await fetch(src);
-      if (!response.ok) {
-        throw new Error(`Failed to load ${src}`);
-      }
-      const html = await response.text();
+      const html = await loadWithFallback(src);
       node.innerHTML = html;
     } catch (error) {
       console.error(error);
       node.innerHTML = '<p class="include-error">Content unavailable.</p>';
     }
   });
+
   await Promise.all(loaders);
 }
 

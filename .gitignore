@@ -1,0 +1,97 @@
+# Sistem Operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Folder sampah
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+
+# Backup
+*~
+*.orig
+
+# Folder build & distribusi
+build/
+dist/
+out/
+bin/
+obj/
+*.class
+*.o
+*.so
+*.dll
+*.exe
+
+# Cache
+.cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.npm/
+node_modules/
+jspm_packages/
+vendor/
+.venv/
+env/
+venv/
+ENV/
+.Python
+
+# Environment & Konfigurasi Lokal
+.env
+.env.*
+*.local
+*.config.js
+*.secret
+*.key
+*.pem
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.iml
+.project
+.settings/
+*.code-workspace
+
+# Testing & Coverage
+.coverage
+coverage/
+htmlcov/
+nosetests.xml
+junit.xml
+test-output/
+.pytest_cache/
+
+# Mac & Linux Metadata
+*.lock
+*.pid
+*.seed
+*.pid.lock
+
+# Paket
+*.egg
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Dokumen sementara
+*.log
+*.sql
+*.sqlite3
+*.db
+*.sqlite
+
+# Output sementara
+tmp/
+temp/
+logs/
+media/
+uploads/

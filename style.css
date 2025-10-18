@@ -1,0 +1,44 @@
+/* External stylesheet for Emina Cosmetics single-page site */
+
+body {
+  line-height: 1.6;
+  background-image: radial-gradient(circle at top left, rgba(255, 102, 163, 0.12), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(255, 235, 243, 0.4), transparent 45%);
+  background-attachment: fixed;
+}
+
+.section-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--pink-bold);
+  margin-top: 0;
+  letter-spacing: 0.03em;
+}
+
+.section-heading::before {
+  content: "✨";
+  font-size: 1.6rem;
+}
+
+.hero-title {
+  text-shadow: 0 8px 26px rgba(255, 102, 163, 0.28);
+}
+
+nav a {
+  letter-spacing: 0.05em;
+}
+
+nav a.active-link {
+  color: var(--pink-bold);
+}
+
+table tbody tr:hover {
+  background-color: rgba(255, 235, 243, 0.55);
+}
+
+.submit-btn {
+  box-shadow: 0 20px 42px rgba(255, 102, 163, 0.28);
+}

@@ -1,11 +1,10 @@
-/* External stylesheet for Emina Cosmetics single-page site */
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  line-height: 1.5;
   font-family: "Poppins", sans-serif;
   color: var(--text-dark);
   background-color: #ffffff;
@@ -38,7 +37,7 @@ header {
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 204, 224, 0.45);
   border-radius: 18px;
-  padding: 0.7rem 1.2rem;
+  padding: 0.85rem 1.2rem;
   backdrop-filter: blur(18px);
   box-shadow: 0 12px 28px rgba(255, 102, 163, 0.12);
 }
@@ -112,7 +111,7 @@ header {
 
 .header-nav {
   justify-content: center;
-  padding: 0.45rem 1.1rem;
+  padding: 0.95rem 1.1rem 0.45rem;
 }
 
 .header-nav nav {
@@ -169,7 +168,7 @@ nav a.active-link::after {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 section {
@@ -693,6 +692,10 @@ ol li strong {
   color: var(--pink-bold);
 }
 
+.table-overflow {
+  overflow-x: auto;
+}
+
 .promo-table-card {
   position: relative;
   padding: 2.2rem 2rem;
@@ -1010,7 +1013,7 @@ h3 {
 
 form {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.25rem;
 }
 
 label {
@@ -1048,7 +1051,7 @@ select:focus {
 
 .field {
   display: grid;
-  gap: 0.4rem;
+  gap: 0.25rem;
 }
 
 .field.error input,
@@ -1068,6 +1071,10 @@ select:focus {
   min-height: 1rem;
   font-size: 0.82rem;
   color: var(--pink-bold);
+}
+
+.error-message:empty {
+  display: none;
 }
 
 .choices {
@@ -1205,87 +1212,19 @@ select:focus {
 }
 
 footer {
-  padding: 3.2rem 1.6rem 2.8rem;
+  padding: 2.5rem 0;
   color: var(--text-muted);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 235, 243, 0.85));
   border-top: 1px solid rgba(255, 204, 224, 0.45);
 }
 
-
-.footer-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 204, 224, 0.45);
-  border-radius: 20px;
-  padding: 1rem 1.5rem;
-  backdrop-filter: blur(18px);
-  box-shadow: 0 12px 28px rgba(255, 102, 163, 0.12);
-}
-
-.footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
-  color: var(--text-dark);
-}
-
-.footer-brand__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #ff86bd, #ff66a3);
-  color: #ffffff;
-  box-shadow: 0 12px 26px rgba(255, 102, 163, 0.25);
-}
-
-.footer-brand__text {
-  display: flex;
-  flex-direction: column;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-}
-
-.footer-brand__tagline {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  color: var(--text-muted);
-}
-
-.footer-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-.footer-nav a {
-  color: var(--text-dark);
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.82rem;
-  letter-spacing: 0.05em;
-  transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  color: var(--pink-bold);
-}
-
 .footer-shell {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 1rem 1.5rem 1.2rem;
+  margin: 0 auto;
   display: grid;
-  gap: 2.4rem;
+  gap: 2rem;
 }
 
 .footer-newsletter {
@@ -1320,9 +1259,10 @@ footer {
   display: flex;
   align-items: center;
   border-radius: 18px;
+  gap: 1rem;
   border: 1px solid rgba(255, 204, 224, 0.45);
   background: rgba(255, 255, 255, 0.85);
-  padding: 0.4rem;
+  padding: 0.75rem 1rem;
   box-shadow: 0 12px 26px rgba(255, 102, 163, 0.12);
 }
 
@@ -1526,7 +1466,7 @@ footer {
   .header-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.6rem;
+    gap: 0.8rem;
   }
 
   .header-top {

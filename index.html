@@ -58,9 +58,10 @@
         <div class="header-row header-nav">
           <nav>
             <ul class="nav-primary">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#emina" class="active-link">Emina</a></li>
+              <li><a href="#">Instaperfect</a></li>
+              <li><a href="#">Wardah</a></li>
               <li><a href="#offers">Offers</a></li>
               <li><a href="#join">Join</a></li>
             </ul>
@@ -152,7 +153,7 @@
         <div class="form-popup__backdrop"></div>
         <div class="form-popup__content" role="dialog" aria-labelledby="form-popup-title">
           <button type="button" class="form-popup__close" aria-label="Close welcome message">
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-times"></i>
           </button>
           <h3 id="form-popup-title">Welcome to the Glow Squad! ✨</h3>
           <p id="form-popup-message">
@@ -413,42 +414,44 @@
             Bundle up your routine with exclusive savings this month. Shop online or in stores and enjoy
             extra treats for you and your besties.
           </p>
-          <table class="promo-table">
-            <thead>
-              <tr>
-                <th>Promo Bundle</th>
-                <th>Includes</th>
-                <th>Highlight</th>
-                <th>Promo Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="bundle-pill"><i class="fa-solid fa-sun"></i> Sun Battle Power Pair</span></td>
-                <td>Hydraburst SPF 50 + Cica Fighter SPF 50</td>
-                <td>Free SPF sachet & pink tote</td>
-                <td class="promo-price">IDR 85.000</td>
-              </tr>
-              <tr>
-                <td><span class="bundle-pill"><i class="fa-solid fa-face-kiss-wink-heart"></i> Muzik Tiger Lip Pack</span></td>
-                <td>Airy Surprise Tint 01 Y2K + Glossy Stain Autumn Bell</td>
-                <td>Limited Muzik Tiger zipper pouch</td>
-                <td class="promo-price">IDR 118.000</td>
-              </tr>
-              <tr>
-                <td><span class="bundle-pill"><i class="fa-solid fa-eye"></i> Glow & Go Eye Rescue</span></td>
-                <td>Eye Wake Up Roller + Water-Sphere Serum</td>
-                <td>Extra 10% off for Glow Club members</td>
-                <td class="promo-price">IDR 165.000</td>
-              </tr>
-              <tr>
-                <td><span class="bundle-pill"><i class="fa-solid fa-sparkles"></i> Fresh Start Glow Kit</span></td>
-                <td>Amino ProCleanser + Hydraburst SPF 50</td>
-                <td>Includes travel-friendly mist 15 ml</td>
-                <td class="promo-price">IDR 99.000</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-overflow">
+            <table class="promo-table">
+              <thead>
+                <tr>
+                  <th>Promo Bundle</th>
+                  <th>Includes</th>
+                  <th>Highlight</th>
+                  <th>Promo Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-sun"></i> Sun Battle Power Pair</span></td>
+                  <td>Hydraburst SPF 50 + Cica Fighter SPF 50</td>
+                  <td>Free SPF sachet & pink tote</td>
+                  <td class="promo-price">IDR 85.000</td>
+                </tr>
+                <tr>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-face-kiss-wink-heart"></i> Muzik Tiger Lip Pack</span></td>
+                  <td>Airy Surprise Tint 01 Y2K + Glossy Stain Autumn Bell</td>
+                  <td>Limited Muzik Tiger zipper pouch</td>
+                  <td class="promo-price">IDR 118.000</td>
+                </tr>
+                <tr>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-eye"></i> Glow & Go Eye Rescue</span></td>
+                  <td>Eye Wake Up Roller + Water-Sphere Serum</td>
+                  <td>Extra 10% off for Glow Club members</td>
+                  <td class="promo-price">IDR 165.000</td>
+                </tr>
+                <tr>
+                  <td><span class="bundle-pill"><i class="fa-solid fa-sparkles"></i> Fresh Start Glow Kit</span></td>
+                  <td>Amino ProCleanser + Hydraburst SPF 50</td>
+                  <td>Includes travel-friendly mist 15 ml</td>
+                  <td class="promo-price">IDR 99.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -482,7 +485,7 @@
         </div>
       </section>
 
-      <!--  JOIN SECTION -->
+      <!-- JOIN SECTION -->
       <section id="join">
         <h2 class="section-heading">Join Our Sweet Squad 💕</h2>
         <p class="section-subtitle">
@@ -580,41 +583,16 @@
               </div>
               <small class="error-message" id="agree-error"></small>
             </div>
-            <button type="submit" class="submit-btn">Join the Club 🌸</button>
+            <button type="submit" class="submit-btn">Join the Club</button>
           </form>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-shell">
-        <div class="footer-top">
-          <a href="#home" class="footer-brand">
-            <span class="footer-brand__icon"><i class="fa-solid fa-heart"></i></span>
-            <span class="footer-brand__text">
-              Paragon Corp
-              <span class="footer-brand__tagline">Born to Be Loved</span>
-            </span>
-          </a>
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#offers">Offers</a></li>
-              <li><a href="#join">Join</a></li>
-            </ul>
-          </nav>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
-          </div>
-        </div>
-
         <div class="footer-newsletter">
           <div>
-            <h3>Glow Newsletter 💌</h3>
+            <h3>Glow Newsletter</h3>
             <p>
               Fresh launches, routine tips, and member-only promos delivered once a week.
               Stay in the loop and glow with the Emina squad.

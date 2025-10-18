@@ -139,7 +139,7 @@ const joinElements = joinForm
         input: document.getElementById("email"),
         error: document.getElementById("email-error"),
         validate: (value) =>
-          /^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(value.trim())
+          /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value.trim())
             ? ""
             : "Please provide a valid email address.",
       },
@@ -147,7 +147,7 @@ const joinElements = joinForm
         input: document.getElementById("password"),
         error: document.getElementById("password-error"),
         validate: (value) =>
-          value.length >= 8 && /\\d/.test(value)
+          value.length >= 8 && /\d/.test(value)
             ? ""
             : "Use at least 8 characters and include a number.",
       },
